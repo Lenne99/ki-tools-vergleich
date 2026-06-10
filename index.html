@@ -13,7 +13,7 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"KI-Tools Vergleich","url":"https://ki-tools-vergleich.de","description":"Unabhängige Tests der besten Software für Selbstständige"}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -33,7 +33,7 @@
   --t1:#EDF2FF;
   --t2:#7B90B8;
   --t3:#344760;
-  --fd:'Syne',sans-serif;
+  --fd:'Plus Jakarta Sans',sans-serif;
   --fb:'Inter',sans-serif;
   --r1:8px;--r2:14px;--r3:20px;--r4:28px;
 }
@@ -70,7 +70,7 @@ a{color:var(--cyan);text-decoration:none}
 .live-dot{width:7px;height:7px;background:var(--green);border-radius:50%;animation:blink 2s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 
-.hero h1{font-family:var(--fd);font-size:clamp(2rem,4.5vw,3.8rem);font-weight:800;line-height:1.15;max-width:820px;margin:0 auto 18px}
+.hero h1{font-family:var(--fd);font-size:clamp(2rem,4.5vw,3.8rem);font-weight:800;line-height:1.2;max-width:820px;margin:0 auto 18px}
 .hero h1 em{font-style:normal;color:var(--cyan)}
 .hero-sub{font-size:1.05rem;color:var(--t2);max-width:520px;margin:0 auto 48px;line-height:1.7}
 
@@ -227,6 +227,14 @@ a{color:var(--cyan);text-decoration:none}
 .f-bottom{border-top:1px solid var(--border);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:.72rem;color:var(--t3)}
 .disclaimer{background:rgba(245,166,35,.04);border:1px solid rgba(245,166,35,.12);border-radius:var(--r1);padding:12px 16px;font-size:.75rem;color:var(--t2);margin-top:24px;line-height:1.6}
 
+/* TOOLTIPS */
+.tip{position:relative;display:inline-flex;align-items:center;gap:3px;cursor:help}
+.tip-icon{width:14px;height:14px;border-radius:50%;background:var(--border2);color:var(--t2);font-size:.6rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s}
+.tip:hover .tip-icon{background:var(--cyan);color:#000}
+.tip-box{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#1a2d45;border:1px solid var(--border2);border-radius:var(--r1);padding:10px 14px;font-size:.75rem;color:var(--t1);line-height:1.5;width:220px;pointer-events:none;opacity:0;transition:opacity .15s;z-index:100;font-family:var(--fb);font-weight:400;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.tip:hover .tip-box{opacity:1}
+.tip-box::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:#1a2d45}
+
 /* UTILS */
 .hidden{display:none!important}
 .sep{border:none;border-top:1px solid var(--border);margin:0}
@@ -371,7 +379,18 @@ a{color:var(--cyan);text-decoration:none}
 
 <hr class="sep">
 
-<!-- TESTSIEGER KI -->
+<!-- TOOL FINDER TEASER -->
+<section style="padding:48px 0;background:linear-gradient(135deg,rgba(0,212,170,.05) 0%,rgba(129,140,248,.05) 100%);border-bottom:1px solid var(--border)">
+  <div class="container" style="text-align:center">
+    <div style="display:inline-flex;align-items:center;gap:6px;background:var(--cyan-soft);border:1px solid rgba(0,212,170,.2);border-radius:100px;padding:5px 14px;font-size:.72rem;font-weight:600;color:var(--cyan);margin-bottom:16px">🤖 Neu — KI-gestützte Empfehlung</div>
+    <h2 style="font-family:var(--fd);font-size:clamp(1.4rem,3vw,2rem);font-weight:800;margin-bottom:10px">Nicht sicher welches Tool passt?</h2>
+    <p style="color:var(--t2);font-size:.95rem;max-width:480px;margin:0 auto 24px">Beschreibe deine Situation — unsere KI analysiert in 60 Sekunden welches Tool wirklich zu dir passt. Kein langes Vergleichen mehr.</p>
+    <a href="pages/tool-finder.html" style="display:inline-flex;align-items:center;gap:8px;background:var(--cyan);color:#000;padding:14px 32px;border-radius:var(--r1);font-weight:700;font-size:1rem;transition:opacity .15s">🔍 Tool-Finder starten →</a>
+    <p style="font-size:.72rem;color:var(--t3);margin-top:12px">✓ Anonym · Keine Anmeldung · DSGVO-konform</p>
+  </div>
+</section>
+
+<hr class="sep">
 <section class="winner section" id="ki">
   <div class="container">
     <div class="sec-header">
@@ -498,9 +517,19 @@ a{color:var(--cyan);text-decoration:none}
           <tbody>
             <tr><td class="fn">Preis/Monat</td><td class="hi best">20 $</td><td>20 $</td><td>Ab 29 €</td><td>22 €</td></tr>
             <tr><td class="fn">DE-Textqualität</td><td class="hi best">Sehr gut</td><td class="ok">Gut</td><td class="yes">Exzellent</td><td class="ok">Gut</td></tr>
-            <tr><td class="fn">DSGVO-konform</td><td class="hi no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td></tr>
+            <tr>
+              <td class="fn">
+                <span class="tip">DSGVO-konform<span class="tip-icon">i</span><span class="tip-box">Die DSGVO schützt personenbezogene Daten in der EU. DSGVO-konforme Tools speichern Daten auf EU-Servern und dürfen bedenkenlos für sensible Geschäftsdaten genutzt werden.</span></span>
+              </td>
+              <td class="hi no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td>
+            </tr>
             <tr><td class="fn">Webzugriff</td><td class="hi yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td></tr>
-            <tr><td class="fn">Kontextlänge</td><td class="hi best">200k Token</td><td class="ok">128k Token</td><td class="no">Begrenzt</td><td class="ok">1M Token</td></tr>
+            <tr>
+              <td class="fn">
+                <span class="tip">Kontextlänge<span class="tip-icon">i</span><span class="tip-box">Wie viel Text das KI-Tool auf einmal "lesen" kann. 200k Token = ca. 150.000 Wörter — also z.B. ein ganzes Buch. Je mehr, desto besser für lange Dokumente.</span></span>
+              </td>
+              <td class="hi best">200k Token</td><td class="ok">128k Token</td><td class="no">Begrenzt</td><td class="ok">1M Token</td>
+            </tr>
             <tr><td class="fn">Kostenlose Version</td><td class="hi yes">✓</td><td class="yes">✓</td><td class="yes">✓ 2.000 Wörter</td><td class="yes">✓</td></tr>
             <tr><td class="fn">Unser Testwert</td><td class="hi best">9.2 / 10</td><td>8.9 / 10</td><td>8.5 / 10</td><td>8.3 / 10</td></tr>
           </tbody>
@@ -637,11 +666,26 @@ a{color:var(--cyan);text-decoration:none}
           </thead>
           <tbody>
             <tr><td class="fn">Preis ab</td><td class="hi-p best-p">8 €/Monat</td><td>13 €/Monat</td><td>14 €/Monat</td><td>9 €/Monat</td></tr>
-            <tr><td class="fn">E-Rechnung</td><td class="hi-p yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="ok">In Arbeit</td></tr>
-            <tr><td class="fn">DATEV-Export</td><td class="hi-p yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+            <tr>
+              <td class="fn">
+                <span class="tip">E-Rechnung<span class="tip-icon">i</span><span class="tip-box">Seit 2025 Pflicht für B2B-Rechnungen in Deutschland. Rechnungen müssen in einem strukturierten digitalen Format (XRechnung oder ZUGFeRD) übermittelt werden — ein einfaches PDF reicht nicht mehr.</span></span>
+              </td>
+              <td class="hi-p yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="ok">In Arbeit</td>
+            </tr>
+            <tr>
+              <td class="fn">
+                <span class="tip">DATEV-Export<span class="tip-icon">i</span><span class="tip-box">DATEV ist das Standardformat für deutsche Steuerberater. Mit einem DATEV-Export kannst du deine Buchhaltungsdaten direkt an deinen Steuerberater übergeben — spart beiden Zeit und Geld.</span></span>
+              </td>
+              <td class="hi-p yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td>
+            </tr>
             <tr><td class="fn">KI-Belegerfassung</td><td class="hi-p ok">Einfach</td><td class="yes">Sehr gut</td><td class="ok">Gut</td><td class="no">✗</td></tr>
             <tr><td class="fn">Bankanbindung</td><td class="hi-p yes">Automatisch</td><td class="yes">✓</td><td class="yes">✓</td><td class="ok">Manuell</td></tr>
-            <tr><td class="fn">Mobile App</td><td class="hi-p yes">✓</td><td class="yes">Sehr gut</td><td class="yes">✓</td><td class="ok">Eingeschränkt</td></tr>
+            <tr>
+              <td class="fn">
+                <span class="tip">GoBD-konform<span class="tip-icon">i</span><span class="tip-box">GoBD = Grundsätze zur ordnungsmäßigen Buchführung. Das Finanzamt schreibt vor wie Belege digital aufbewahrt werden müssen. GoBD-konforme Software macht das automatisch richtig.</span></span>
+              </td>
+              <td class="hi-p yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td>
+            </tr>
             <tr><td class="fn">Unser Testwert</td><td class="hi-p best-p">9.4 / 10</td><td>8.8 / 10</td><td>8.2 / 10</td><td>7.5 / 10</td></tr>
           </tbody>
         </table>
