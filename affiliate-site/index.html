@@ -3,589 +3,954 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO Meta Tags -->
-  <title>KI-Tools Vergleich 2026 – Die besten Tools für Selbstständige & Freelancer</title>
-  <meta name="description" content="Unabhängiger Vergleich der besten KI-Tools und SaaS-Software für deutschsprachige Selbstständige. Echte Tests, faire Bewertungen, aktuelle Preise.">
+  <title>Software-Vergleich für Selbstständige 2026 – KI-Tools & Business-Software</title>
+  <meta name="description" content="Unabhängige Tests der besten KI-Tools und Business-Software für deutschsprachige Selbstständige und Freelancer. Ehrliche Bewertungen, aktuelle Preise.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ki-tools-vergleich.de/">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="KI-Tools Vergleich 2026 – Für Selbstständige & Freelancer">
-  <meta property="og:description" content="Unabhängiger Vergleich der besten KI-Tools. Echte Tests, faire Bewertungen.">
+  <meta property="og:title" content="Software-Vergleich für Selbstständige 2026">
+  <meta property="og:description" content="Die besten KI-Tools und Business-Software für Selbstständige – unabhängig getestet.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ki-tools-vergleich.de/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"KI-Tools Vergleich","url":"https://ki-tools-vergleich.de","description":"Unabhängige Tests der besten Software für Selbstständige"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#070F1C;
+  --bg2:#0B1525;
+  --bg3:#0F1C30;
+  --card:#111E30;
+  --card2:#172540;
+  --border:#1A2D45;
+  --border2:#213550;
+  --cyan:#00D4AA;
+  --cyan-soft:rgba(0,212,170,.1);
+  --cyan-glow:rgba(0,212,170,.2);
+  --amber:#F5A623;
+  --green:#4ADE80;
+  --purple:#818CF8;
+  --t1:#EDF2FF;
+  --t2:#7B90B8;
+  --t3:#344760;
+  --fd:'Plus Jakarta Sans',sans-serif;
+  --fb:'Inter',sans-serif;
+  --r1:8px;--r2:14px;--r3:20px;--r4:28px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--bg);color:var(--t1);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--cyan);text-decoration:none}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
 
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "KI-Tools Vergleich",
-    "url": "https://ki-tools-vergleich.de",
-    "description": "Unabhängiger Vergleich der besten KI-Tools und SaaS-Software für deutschsprachige Selbstständige",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://ki-tools-vergleich.de/suche?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
+/* NAV */
+.nav{position:sticky;top:0;z-index:200;background:rgba(7,15,28,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px;gap:20px}
+.logo{font-family:var(--fb);font-size:1.15rem;font-weight:700;color:var(--t1)}
+.logo span{color:var(--cyan)}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{font-size:.85rem;font-weight:500;color:var(--t2);transition:color .15s}
+.nav-links a:hover{color:var(--t1)}
+.nav-cta{background:var(--cyan);color:#000;padding:8px 18px;border-radius:var(--r1);font-weight:700;font-size:.85rem;white-space:nowrap;transition:opacity .15s}
+.nav-cta:hover{opacity:.85;color:#000}
 
-  <link rel="stylesheet" href="css/style.css">
+/* STICKY BAR */
+.sticky-bar{position:fixed;bottom:0;left:0;right:0;z-index:150;background:rgba(7,15,28,.95);backdrop-filter:blur(16px);border-top:1px solid var(--border);padding:10px 24px;display:flex;align-items:center;justify-content:center;gap:20px;transform:translateY(100%);transition:transform .3s}
+.sticky-bar.show{transform:translateY(0)}
+.sticky-bar p{font-size:.82rem;color:var(--t2)}
+.sticky-bar p strong{color:var(--t1)}
+.sticky-bar a{background:var(--cyan);color:#000;padding:9px 20px;border-radius:var(--r1);font-weight:700;font-size:.85rem;white-space:nowrap}
+.sticky-bar .ad-label{font-size:.65rem;color:var(--t3);border:1px solid var(--border);padding:2px 6px;border-radius:3px}
+
+/* HERO */
+.hero{padding:88px 0 80px;text-align:center;position:relative;overflow:hidden}
+.hero-glow-1{position:absolute;top:-160px;left:50%;transform:translateX(-50%);width:800px;height:500px;background:radial-gradient(ellipse,rgba(0,212,170,.1) 0%,transparent 65%);pointer-events:none}
+.hero-glow-2{position:absolute;bottom:0;right:10%;width:400px;height:400px;background:radial-gradient(ellipse,rgba(129,140,248,.05) 0%,transparent 65%);pointer-events:none}
+
+.live-pill{display:inline-flex;align-items:center;gap:7px;background:var(--cyan-soft);border:1px solid rgba(0,212,170,.2);border-radius:100px;padding:5px 14px;font-size:.75rem;font-weight:600;color:var(--cyan);margin-bottom:28px}
+.live-dot{width:7px;height:7px;background:var(--green);border-radius:50%;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+.hero h1{font-family:var(--fd);font-size:clamp(2rem,4.5vw,3.8rem);font-weight:800;line-height:1.2;max-width:820px;margin:0 auto 18px}
+.hero h1 em{font-style:normal;color:var(--cyan)}
+.hero-sub{font-size:1.05rem;color:var(--t2);max-width:520px;margin:0 auto 48px;line-height:1.7}
+
+/* WEGWEISER */
+.wegweiser{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:720px;margin:0 auto 64px}
+.weg-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r4);padding:32px 28px;text-align:left;cursor:pointer;transition:border-color .2s,transform .2s,box-shadow .2s;text-decoration:none;display:block}
+.weg-card:hover{border-color:var(--cyan);transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,.3);color:var(--t1)}
+.weg-card.ki{border-top:3px solid var(--cyan)}
+.weg-card.biz{border-top:3px solid var(--purple)}
+.weg-emoji{font-size:2.2rem;margin-bottom:14px;display:block}
+.weg-title{font-family:var(--fb);font-size:1.2rem;font-weight:700;margin-bottom:8px;color:var(--t1)}
+.weg-desc{font-size:.85rem;color:var(--t2);line-height:1.6;margin-bottom:16px}
+.weg-tools{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.weg-tag{font-size:.7rem;padding:3px 9px;border-radius:4px;font-weight:500}
+.weg-tag.cyan{background:rgba(0,212,170,.1);color:var(--cyan);border:1px solid rgba(0,212,170,.2)}
+.weg-tag.purple{background:rgba(129,140,248,.1);color:var(--purple);border:1px solid rgba(129,140,248,.2)}
+.weg-cta{font-size:.85rem;font-weight:700;display:flex;align-items:center;gap:6px}
+.weg-cta.cyan{color:var(--cyan)}
+.weg-cta.purple{color:var(--purple)}
+
+/* STATS */
+.stats-row{display:flex;justify-content:center;gap:0;border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;max-width:580px;margin:0 auto}
+.stat{flex:1;padding:18px 12px;text-align:center;border-right:1px solid var(--border)}
+.stat:last-child{border-right:none}
+.stat-n{font-family:var(--fd);font-size:1.6rem;font-weight:800;line-height:1.2}
+.stat-l{font-size:.68rem;color:var(--t2);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+
+/* SECTION */
+.section{padding:80px 0}
+.sec-header{text-align:center;margin-bottom:48px}
+.eyebrow{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);display:block;margin-bottom:10px}
+.eyebrow.purple{color:var(--purple)}
+.sec-header h2{font-family:var(--fd);font-size:clamp(1.5rem,3vw,2.3rem);font-weight:800}
+.sec-header p{color:var(--t2);margin-top:10px;font-size:.95rem}
+
+/* TESTSIEGER BLOCK */
+.winner{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.winner-tabs{display:flex;gap:4px;justify-content:center;margin-bottom:40px;background:var(--card);border:1px solid var(--border);border-radius:100px;padding:4px;max-width:360px;margin:0 auto 40px}
+.winner-tab{flex:1;padding:9px 20px;border-radius:100px;font-size:.85rem;font-weight:600;cursor:pointer;text-align:center;transition:all .2s;color:var(--t2);border:none;background:none;font-family:var(--fb)}
+.winner-tab.active{background:var(--cyan);color:#000}
+.winner-tab.active.purple{background:var(--purple)}
+
+.winner-panel{display:none}
+.winner-panel.active{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start}
+.winner-top{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.winner-icon{width:56px;height:56px;border-radius:var(--r2);background:var(--cyan-soft);border:1px solid rgba(0,212,170,.2);display:flex;align-items:center;justify-content:center;font-size:1.8rem;flex-shrink:0}
+.winner-icon.purple{background:rgba(129,140,248,.1);border-color:rgba(129,140,248,.2)}
+.winner-badge{display:inline-flex;align-items:center;gap:5px;background:var(--cyan);color:#000;font-size:.65rem;font-weight:800;padding:3px 10px;border-radius:100px;text-transform:uppercase;letter-spacing:.07em}
+.winner-badge.purple{background:var(--purple)}
+.winner-title{font-family:var(--fd);font-size:clamp(1.4rem,3vw,1.8rem);font-weight:800;margin:10px 0 8px}
+.winner-desc{color:var(--t2);font-size:.92rem;margin-bottom:20px;max-width:500px;line-height:1.7}
+.winner-feats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.winner-feat{display:flex;align-items:center;gap:6px;font-size:.8rem;color:var(--t2)}
+.winner-feat::before{content:'✓';color:var(--cyan);font-weight:700}
+.winner-feat.purple::before{color:var(--purple)}
+.winner-cta-wrap{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn-win{background:var(--cyan);color:#000;padding:13px 28px;border-radius:var(--r1);font-weight:700;font-size:.95rem;transition:opacity .15s,transform .15s;display:inline-flex;align-items:center;gap:8px}
+.btn-win:hover{opacity:.85;transform:translateY(-1px);color:#000}
+.btn-win.purple{background:var(--purple)}
+.btn-ghost{background:transparent;border:1px solid var(--border2);color:var(--t2);padding:13px 20px;border-radius:var(--r1);font-size:.9rem;transition:all .15s}
+.btn-ghost:hover{border-color:var(--t2);color:var(--t1)}
+.ad-tag{font-size:.65rem;color:var(--t3);border:1px solid var(--border);padding:2px 6px;border-radius:3px;white-space:nowrap}
+
+.winner-score{background:var(--card);border:1px solid var(--border);border-radius:var(--r3);padding:24px;min-width:200px;text-align:center}
+.score-num{font-family:var(--fd);font-size:3.2rem;font-weight:800;color:var(--cyan);line-height:1}
+.score-num.purple{color:var(--purple)}
+.score-label{font-size:.72rem;color:var(--t2);margin-top:4px;text-transform:uppercase;letter-spacing:.06em}
+.score-stars{color:var(--amber);font-size:1rem;margin:10px 0}
+.score-price{font-size:1.1rem;font-weight:700;color:var(--t1);margin-top:10px}
+.score-price-sub{font-size:.72rem;color:var(--t2)}
+.score-disclaimer{font-size:.65rem;color:var(--t3);margin-top:6px}
+
+/* VERGLEICH TABLE */
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse;font-size:.85rem;min-width:640px}
+.tbl th{background:var(--card);border:1px solid var(--border);padding:12px 16px;text-align:left;font-family:var(--fb);font-weight:700;font-size:.85rem}
+.tbl th.hi{background:var(--cyan-soft);border-top:2px solid var(--cyan)}
+.tbl th.hi-p{background:rgba(129,140,248,.08);border-top:2px solid var(--purple)}
+.tbl td{border:1px solid var(--border);padding:11px 16px;color:var(--t2);vertical-align:middle}
+.tbl tr:nth-child(even) td{background:rgba(255,255,255,.015)}
+.tbl tr:hover td{background:var(--cyan-soft)}
+.tbl .fn{font-weight:600;color:var(--t1);font-size:.8rem}
+.yes{color:var(--cyan)}
+.no{color:var(--t3)}
+.ok{color:var(--amber)}
+.best{color:var(--cyan);font-weight:700}
+.best-p{color:var(--purple);font-weight:700}
+
+/* TOOL CARDS */
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:36px}
+.fbtn{background:var(--card);border:1px solid var(--border);color:var(--t2);padding:7px 16px;border-radius:100px;font-size:.8rem;font-weight:500;cursor:pointer;transition:all .2s;font-family:var(--fb)}
+.fbtn:hover,.fbtn.on{background:var(--cyan-soft);border-color:rgba(0,212,170,.3);color:var(--cyan)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r4);padding:26px;display:flex;flex-direction:column;gap:14px;transition:transform .2s,border-color .2s,box-shadow .2s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-3px);border-color:var(--border2);box-shadow:0 12px 40px rgba(0,0,0,.25)}
+.card.top-pick{border-color:rgba(0,212,170,.2)}
+.card.top-pick::after{content:'Empfehlung';position:absolute;top:16px;right:-32px;background:var(--cyan);color:#000;font-size:.62rem;font-weight:800;padding:4px 42px;transform:rotate(45deg);letter-spacing:.05em}
+
+.card-head{display:flex;align-items:center;gap:12px}
+.card-ico{width:48px;height:48px;border-radius:var(--r2);background:var(--card2);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
+.card-name{font-family:var(--fb);font-size:1rem;font-weight:700}
+.card-cat{font-size:.7rem;color:var(--cyan);font-weight:600;margin-top:2px}
+.card-cat.purple{color:var(--purple)}
+
+.card-desc{font-size:.85rem;color:var(--t2);line-height:1.6;flex:1}
+.card-tags{display:flex;gap:5px;flex-wrap:wrap}
+.ctag{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:4px;padding:2px 8px;font-size:.68rem;color:var(--t3)}
+
+.card-foot{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid var(--border)}
+.card-price{font-size:.88rem;font-weight:700}
+.card-price span{font-weight:400;color:var(--t2);font-size:.78rem}
+.card-stars{color:var(--amber);font-size:.8rem}
+
+.card-btns{display:flex;gap:8px}
+.cbtn{flex:1;text-align:center;padding:9px 8px;border-radius:var(--r1);font-size:.8rem;font-weight:700;transition:all .2s}
+.cbtn.p{background:var(--cyan);color:#000}
+.cbtn.p:hover{opacity:.85;color:#000}
+.cbtn.s{background:transparent;border:1px solid var(--border2);color:var(--t2)}
+.cbtn.s:hover{border-color:var(--t2);color:var(--t1)}
+.cbtn-wrap{display:flex;flex-direction:column;gap:4px}
+.cbtn-adlabel{font-size:.6rem;color:var(--t3);text-align:center}
+
+/* FAQ */
+.faq-wrap{max-width:680px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;color:var(--t1);font-family:var(--fb);font-size:.92rem;font-weight:600;text-align:left;padding:18px 0;cursor:pointer;display:flex;justify-content:space-between;gap:16px}
+.faq-q::after{content:'+';font-size:1.3rem;color:var(--cyan);flex-shrink:0;transition:transform .2s}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{font-size:.87rem;color:var(--t2);padding-bottom:18px;display:none;line-height:1.7}
+.faq-item.open .faq-a{display:block}
+
+/* NEWSLETTER */
+.nl{background:var(--card);border:1px solid var(--border);border-radius:var(--r4);padding:52px 44px;text-align:center;margin:72px 0;position:relative;overflow:hidden}
+.nl::after{content:'';position:absolute;bottom:-60px;right:-60px;width:260px;height:260px;background:radial-gradient(circle,var(--cyan-glow) 0%,transparent 65%);pointer-events:none}
+.nl h2{font-family:var(--fd);font-size:1.9rem;font-weight:800;margin-bottom:10px}
+.nl p{color:var(--t2);margin-bottom:26px;font-size:.92rem}
+.nl-form{display:flex;gap:10px;max-width:400px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.nl-form input{flex:1;min-width:190px;background:var(--bg2);border:1px solid var(--border2);border-radius:var(--r1);color:var(--t1);padding:11px 15px;font-size:.88rem;font-family:var(--fb);outline:none;transition:border-color .2s}
+.nl-form input:focus{border-color:var(--cyan)}
+.nl-form input::placeholder{color:var(--t3)}
+.nl-hint{font-size:.72rem;color:var(--t3);margin-top:10px}
+
+/* FOOTER */
+.footer{background:var(--bg2);border-top:1px solid var(--border);padding:56px 0 28px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:44px}
+.f-logo{font-family:var(--fd);font-size:1.05rem;font-weight:800;color:var(--t1);margin-bottom:10px;display:block}
+.f-logo span{color:var(--cyan)}
+.f-desc{font-size:.8rem;color:var(--t2);max-width:220px;line-height:1.6}
+.f-col h4{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--t3);margin-bottom:12px}
+.f-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.f-col a{font-size:.8rem;color:var(--t2);transition:color .15s}
+.f-col a:hover{color:var(--t1)}
+.f-bottom{border-top:1px solid var(--border);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:.72rem;color:var(--t3)}
+.disclaimer{background:rgba(245,166,35,.04);border:1px solid rgba(245,166,35,.12);border-radius:var(--r1);padding:12px 16px;font-size:.75rem;color:var(--t2);margin-top:24px;line-height:1.6}
+
+/* TOOLTIPS */
+.tip{position:relative;display:inline-flex;align-items:center;gap:3px;cursor:help}
+.tip-icon{width:14px;height:14px;border-radius:50%;background:var(--border2);color:var(--t2);font-size:.6rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s}
+.tip:hover .tip-icon{background:var(--cyan);color:#000}
+.tip-box{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#1a2d45;border:1px solid var(--border2);border-radius:var(--r1);padding:10px 14px;font-size:.75rem;color:var(--t1);line-height:1.5;width:220px;pointer-events:none;opacity:0;transition:opacity .15s;z-index:100;font-family:var(--fb);font-weight:400;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.tip:hover .tip-box{opacity:1}
+.tip-box::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:#1a2d45}
+
+/* UTILS */
+.hidden{display:none!important}
+.sep{border:none;border-top:1px solid var(--border);margin:0}
+
+
+/* ── Tablet Landscape & kleine Desktops (max 1024px) ── */
+@media(max-width:1024px){
+  .container{padding:0 20px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+  .footer-grid{grid-template-columns:2fr 1fr 1fr}
+}
+
+/* ── Tablet Portrait (max 860px) ── */
+@media(max-width:860px){
+  .nav-links{display:none}
+  .wegweiser{grid-template-columns:1fr 1fr}
+  .winner-panel.active{grid-template-columns:1fr}
+  .winner-score{display:none}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .hero{padding:72px 0 60px}
+  .section{padding:64px 0}
+  .qc-grid{grid-template-columns:repeat(2,1fr)}
+  .tbl{font-size:.8rem}
+  .tbl th,.tbl td{padding:9px 12px}
+}
+
+/* ── Großes Handy / kleines Tablet (max 640px) ── */
+@media(max-width:640px){
+  .wegweiser{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .stats-row{flex-direction:column;max-width:100%}
+  .stat{border-right:none;border-bottom:1px solid var(--border)}
+  .stat:last-child{border-bottom:none}
+  .winner-tabs{max-width:100%}
+  .nl{padding:36px 20px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .hero-sub{font-size:.95rem}
+  .weg-card{padding:24px 20px}
+}
+
+/* ── Handy Portrait (max 480px) ── */
+@media(max-width:480px){
+  .hero{padding:52px 0 44px}
+  .container{padding:0 16px}
+  .section{padding:52px 0}
+  .footer-grid{grid-template-columns:1fr}
+  .nl{padding:28px 16px}
+  .nl h2{font-size:1.5rem}
+  .sticky-bar{flex-direction:column;gap:8px;padding:12px 16px;text-align:center}
+  .sticky-bar p{font-size:.78rem}
+  .winner-cta-wrap{flex-direction:column;align-items:flex-start}
+  .btn-win,.btn-ghost{width:100%;text-align:center;justify-content:center}
+  .card-btns{flex-direction:column}
+  .cbtn{text-align:center}
+  .filter-bar{gap:6px}
+  .fbtn{padding:6px 12px;font-size:.75rem}
+  .faq-q{font-size:.85rem}
+  .nav-cta{padding:7px 14px;font-size:.8rem}
+  .logo{font-size:1rem}
+}
+</style>
 </head>
 <body>
 
-<!-- ══════════════════════════════════════
-     NAVIGATION
-══════════════════════════════════════ -->
-<nav class="nav" role="navigation" aria-label="Hauptnavigation">
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="sbar">
+  <p><strong>Unser Testsieger Buchhaltung:</strong> Lexoffice — aktuell 6 Monate kostenlos</p>
+  <span class="ad-label">Anzeige</span>
+  <a href="https://lexoffice.de" target="_blank" rel="noopener sponsored" data-aff="sticky">Jetzt testen →</a>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
   <div class="container nav-inner">
-    <a href="/" class="nav-logo">KI<span>Tools</span>Vergleich</a>
+    <a href="/" class="logo">KI<span>Tools</span>Vergleich</a>
     <ul class="nav-links">
-      <li><a href="#tools">Alle Tools</a></li>
-      <li><a href="#vergleich">Vergleich</a></li>
-      <li><a href="pages/buchhaltung.html">Buchhaltung</a></li>
-      <li><a href="pages/ki-schreiben.html">KI Schreiben</a></li>
+      <li><a href="#ki">KI-Tools</a></li>
+      <li><a href="#business">Business-Software</a></li>
+      <li><a href="#alle-tools">Alle Tools</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a href="#tools" class="nav-cta">Tool finden →</a>
+    <a href="#wegweiser" class="nav-cta">Tool finden →</a>
   </div>
 </nav>
 
-<!-- ══════════════════════════════════════
-     HERO
-══════════════════════════════════════ -->
+<!-- HERO -->
 <header class="hero">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
   <div class="container">
-    <div class="hero-badge">
-      <span>★</span> Unabhängig getestet · Keine bezahlten Platzierungen
+    <div class="live-pill">
+      <span class="live-dot"></span>
+      Laufend aktualisiert · Stand Juni 2026
     </div>
-    <h1>Die besten <em>KI-Tools</em> für<br>Selbstständige in Deutschland</h1>
-    <p class="hero-sub">
-      Wir testen KI-Tools und SaaS-Software ehrlich – damit du weißt,
-      was wirklich funktioniert und was sein Geld wert ist.
-    </p>
-    <div class="hero-actions">
-      <a href="#tools" class="btn-primary">Tools entdecken</a>
-      <a href="#vergleich" class="btn-secondary">Direktvergleich →</a>
-    </div>
+    <h1>Die besten Tools für<br><em>Selbstständige</em> in Deutschland</h1>
+    <p class="hero-sub">KI-Assistenten, Buchhaltung, Projektmanagement — wir testen die wichtigste Software für Freelancer und Selbstständige ehrlich und unabhängig.</p>
 
-    <div class="hero-stats">
-      <div>
-        <div class="hero-stat-num">47+</div>
-        <div class="hero-stat-label">getestete Tools</div>
-      </div>
-      <div>
-        <div class="hero-stat-num">12.000+</div>
-        <div class="hero-stat-label">monatliche Leser</div>
-      </div>
-      <div>
-        <div class="hero-stat-num">100%</div>
-        <div class="hero-stat-label">unabhängige Tests</div>
-      </div>
-      <div>
-        <div class="hero-stat-num">2026</div>
-        <div class="hero-stat-label">aktuell gehalten</div>
-      </div>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-n">47+</div><div class="stat-l">Getestete Tools</div></div>
+      <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Unabhängig</div></div>
+      <div class="stat"><div class="stat-n">Seit 2024</div><div class="stat-l">Im Einsatz geprüft</div></div>
     </div>
   </div>
 </header>
 
-<!-- ══════════════════════════════════════
-     TOP PICKS
-══════════════════════════════════════ -->
-<section class="top-picks section">
+<!-- WEGWEISER -->
+<section class="section" id="wegweiser" style="padding-top:48px;padding-bottom:64px">
   <div class="container">
-    <div class="section-header">
-      <span class="eyebrow">Unsere Empfehlungen</span>
-      <h2>Die 3 besten Tools für jeden Anwendungsfall</h2>
-      <p>Basierend auf echten Tests mit deutschsprachigen Selbstständigen</p>
+    <div class="sec-header">
+      <span class="eyebrow">Was brauchst du heute?</span>
+      <h2>Wähle deinen Bereich</h2>
+      <p>Direkt zu den relevanten Tests und Vergleichen</p>
     </div>
-
-    <div class="top-picks-grid">
-      <article class="pick-card">
-        <div class="pick-num">01</div>
-        <div class="tool-icon">✍️</div>
-        <h3>Bestes KI-Schreibtool</h3>
-        <p>Für Freelancer die regelmäßig Texte, E-Mails und Content erstellen müssen.</p>
-        <a href="pages/ki-schreiben.html" class="btn-card-primary" style="margin-top:8px;">Zum Vergleich →</a>
-      </article>
-
-      <article class="pick-card">
-        <div class="pick-num">02</div>
-        <div class="tool-icon">📊</div>
-        <h3>Beste Buchhaltungssoftware</h3>
-        <p>Für Selbstständige die DSGVO-konform und einfach abrechnen wollen.</p>
-        <a href="pages/buchhaltung.html" class="btn-card-primary" style="margin-top:8px;">Zum Vergleich →</a>
-      </article>
-
-      <article class="pick-card">
-        <div class="pick-num">03</div>
-        <div class="tool-icon">🤖</div>
-        <h3>Bester KI-Assistent</h3>
-        <p>Für Selbstständige die Routineaufgaben automatisieren und Zeit sparen wollen.</p>
-        <a href="pages/ki-assistenten.html" class="btn-card-primary" style="margin-top:8px;">Zum Vergleich →</a>
-      </article>
+    <div class="wegweiser">
+      <a href="#ki" class="weg-card ki">
+        <span class="weg-emoji">🤖</span>
+        <div class="weg-title">KI & Produktivität</div>
+        <p class="weg-desc">KI-Assistenten, Schreibtools und Automatisierung — damit erledigst du Texte, E-Mails und Routineaufgaben in einem Bruchteil der Zeit.</p>
+        <div class="weg-tools">
+          <span class="weg-tag cyan">ChatGPT Plus</span>
+          <span class="weg-tag cyan">Claude Pro</span>
+          <span class="weg-tag cyan">neuroflash</span>
+          <span class="weg-tag cyan">Gemini</span>
+        </div>
+        <div class="weg-cta cyan">Zu den KI-Tests → </div>
+      </a>
+      <a href="#business" class="weg-card biz">
+        <span class="weg-emoji">📊</span>
+        <div class="weg-title">Business & Verwaltung</div>
+        <p class="weg-desc">Buchhaltung, Rechnungen, Projektmanagement — die Software die du für den reibungslosen Geschäftsbetrieb als Selbstständiger brauchst.</p>
+        <div class="weg-tools">
+          <span class="weg-tag purple">Lexoffice</span>
+          <span class="weg-tag purple">sevdesk</span>
+          <span class="weg-tag purple">Notion</span>
+          <span class="weg-tag purple">FastBill</span>
+        </div>
+        <div class="weg-cta purple">Zu den Business-Tests →</div>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════
-     TOOLS ÜBERSICHT
-══════════════════════════════════════ -->
-<section class="section" id="tools">
+<hr class="sep">
+
+<!-- TOOL FINDER TEASER -->
+<section style="padding:48px 0;background:linear-gradient(135deg,rgba(0,212,170,.05) 0%,rgba(129,140,248,.05) 100%);border-bottom:1px solid var(--border)">
+  <div class="container" style="text-align:center">
+    <div style="display:inline-flex;align-items:center;gap:6px;background:var(--cyan-soft);border:1px solid rgba(0,212,170,.2);border-radius:100px;padding:5px 14px;font-size:.72rem;font-weight:600;color:var(--cyan);margin-bottom:16px">🤖 Neu — KI-gestützte Empfehlung</div>
+    <h2 style="font-family:var(--fd);font-size:clamp(1.4rem,3vw,2rem);font-weight:800;margin-bottom:10px">Nicht sicher welches Tool passt?</h2>
+    <p style="color:var(--t2);font-size:.95rem;max-width:480px;margin:0 auto 24px">Beschreibe deine Situation — unsere KI analysiert in 60 Sekunden welches Tool wirklich zu dir passt. Kein langes Vergleichen mehr.</p>
+    <a href="pages/tool-finder.html" style="display:inline-flex;align-items:center;gap:8px;background:var(--cyan);color:#000;padding:14px 32px;border-radius:var(--r1);font-weight:700;font-size:1rem;transition:opacity .15s">🔍 Tool-Finder starten →</a>
+    <p style="font-size:.72rem;color:var(--t3);margin-top:12px">✓ Anonym · Keine Anmeldung · DSGVO-konform</p>
+  </div>
+</section>
+
+<hr class="sep">
+<section class="winner section" id="ki">
   <div class="container">
-    <div class="section-header">
+    <div class="sec-header">
+      <span class="eyebrow">Unser Testsieger · KI & Produktivität</span>
+      <h2>Der beste KI-Assistent für Selbstständige</h2>
+      <p>Nach ausführlichem Test im echten Arbeitsalltag — laut unserem Vergleich</p>
+    </div>
+
+    <div class="winner-tabs" id="ki-tabs">
+      <button class="winner-tab active" data-panel="claude">Claude Pro</button>
+      <button class="winner-tab" data-panel="chatgpt">ChatGPT Plus</button>
+      <button class="winner-tab" data-panel="neuroflash">neuroflash</button>
+    </div>
+
+    <!-- Claude -->
+    <div class="winner-panel active" id="panel-claude">
+      <div>
+        <div class="winner-top">
+          <div class="winner-icon">💡</div>
+          <div>
+            <span class="winner-badge">★ Testsieger laut unserem Test</span>
+          </div>
+        </div>
+        <div class="winner-title">Claude Pro</div>
+        <p class="winner-desc">Claude Pro überzeugt im Test mit der besten deutschen Textqualität aller getesteten KI-Assistenten. Besonders stark bei langen Dokumenten, nuanciertem Schreiben und komplexen Analysen — ideal für Selbstständige die täglich viel schreiben.</p>
+        <div class="winner-feats">
+          <span class="winner-feat">Beste DE-Textqualität im Test</span>
+          <span class="winner-feat">200.000 Token Kontext</span>
+          <span class="winner-feat">Websuche integriert</span>
+          <span class="winner-feat">Kostenlose Version verfügbar</span>
+        </div>
+        <div class="winner-cta-wrap">
+          <a href="https://claude.ai" target="_blank" rel="noopener sponsored" class="btn-win" data-aff="winner-claude">Kostenlos testen →</a>
+          <a href="pages/claude-pro-test.html" class="btn-ghost">Zum Testbericht</a>
+          <span class="ad-tag">Anzeige</span>
+        </div>
+      </div>
+      <div class="winner-score">
+        <div class="score-num">9.2</div>
+        <div class="score-label">Unser Testwert</div>
+        <div class="score-stars">★★★★½</div>
+        <div class="score-price">20 $/Monat</div>
+        <div class="score-price-sub">kostenlose Version verfügbar</div>
+        <div class="score-disclaimer">Stand: Juni 2026 · ohne Gewähr</div>
+      </div>
+    </div>
+
+    <!-- ChatGPT -->
+    <div class="winner-panel" id="panel-chatgpt">
+      <div>
+        <div class="winner-top">
+          <div class="winner-icon">🤖</div>
+          <div><span class="winner-badge">Meistgenutzt weltweit</span></div>
+        </div>
+        <div class="winner-title">ChatGPT Plus</div>
+        <p class="winner-desc">ChatGPT Plus ist der bekannteste KI-Assistent und bietet das größte Plugin-Ökosystem. Besonders stark bei Code, Datenanalyse und kreativen Aufgaben. Die deutsche Textqualität ist gut, aber laut unserem Test einen Tick hinter Claude.</p>
+        <div class="winner-feats">
+          <span class="winner-feat">Größtes Plugin-Ökosystem</span>
+          <span class="winner-feat">Bildgenerierung (DALL-E)</span>
+          <span class="winner-feat">Webzugriff integriert</span>
+          <span class="winner-feat">Kostenlose Version verfügbar</span>
+        </div>
+        <div class="winner-cta-wrap">
+          <a href="https://chat.openai.com" target="_blank" rel="noopener sponsored" class="btn-win" data-aff="winner-chatgpt">Kostenlos testen →</a>
+          <a href="pages/chatgpt-plus-test.html" class="btn-ghost">Zum Testbericht</a>
+          <span class="ad-tag">Anzeige</span>
+        </div>
+      </div>
+      <div class="winner-score">
+        <div class="score-num">8.9</div>
+        <div class="score-label">Unser Testwert</div>
+        <div class="score-stars">★★★★½</div>
+        <div class="score-price">20 $/Monat</div>
+        <div class="score-price-sub">kostenlose Version verfügbar</div>
+        <div class="score-disclaimer">Stand: Juni 2026 · ohne Gewähr</div>
+      </div>
+    </div>
+
+    <!-- neuroflash -->
+    <div class="winner-panel" id="panel-neuroflash">
+      <div>
+        <div class="winner-top">
+          <div class="winner-icon">✍️</div>
+          <div><span class="winner-badge">Beste Wahl für deutsche Texte</span></div>
+        </div>
+        <div class="winner-title">neuroflash</div>
+        <p class="winner-desc">neuroflash ist das einzige getestete Tool das vollständig DSGVO-konform auf EU-Servern betrieben wird. Die deutsche Textqualität ist exzellent — besonders für Marketing, SEO-Artikel und Social-Media-Posts.</p>
+        <div class="winner-feats">
+          <span class="winner-feat">DSGVO-konform · EU-Server</span>
+          <span class="winner-feat">Beste DE-Textqualität für Marketing</span>
+          <span class="winner-feat">SEO-Optimierung integriert</span>
+          <span class="winner-feat">Kostenlose Version (2.000 Wörter)</span>
+        </div>
+        <div class="winner-cta-wrap">
+          <a href="https://neuroflash.com" target="_blank" rel="noopener sponsored" class="btn-win" data-aff="winner-neuroflash">Kostenlos testen →</a>
+          <a href="pages/neuroflash-test.html" class="btn-ghost">Zum Testbericht</a>
+          <span class="ad-tag">Anzeige</span>
+        </div>
+      </div>
+      <div class="winner-score">
+        <div class="score-num">8.5</div>
+        <div class="score-label">Unser Testwert</div>
+        <div class="score-stars">★★★★☆</div>
+        <div class="score-price">Ab 29 €/Monat</div>
+        <div class="score-price-sub">2.000 Wörter kostenlos testen</div>
+        <div class="score-disclaimer">Stand: Juni 2026 · ohne Gewähr</div>
+      </div>
+    </div>
+
+    <!-- KI VERGLEICH -->
+    <div style="margin-top:48px">
+      <h3 style="font-family:var(--fd);font-size:1.2rem;margin-bottom:20px;text-align:center">KI-Assistenten im Direktvergleich</h3>
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Merkmal</th>
+              <th class="hi">Claude Pro</th>
+              <th>ChatGPT Plus</th>
+              <th>neuroflash</th>
+              <th>Gemini Advanced</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="fn">Preis/Monat</td><td class="hi best">20 $</td><td>20 $</td><td>Ab 29 €</td><td>22 €</td></tr>
+            <tr><td class="fn">DE-Textqualität</td><td class="hi best">Sehr gut</td><td class="ok">Gut</td><td class="yes">Exzellent</td><td class="ok">Gut</td></tr>
+            <tr>
+              <td class="fn">
+                <span class="tip">DSGVO-konform<span class="tip-icon">i</span><span class="tip-box">Die DSGVO schützt personenbezogene Daten in der EU. DSGVO-konforme Tools speichern Daten auf EU-Servern und dürfen bedenkenlos für sensible Geschäftsdaten genutzt werden.</span></span>
+              </td>
+              <td class="hi no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="no">✗</td>
+            </tr>
+            <tr><td class="fn">Webzugriff</td><td class="hi yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td></tr>
+            <tr>
+              <td class="fn">
+                <span class="tip">Kontextlänge<span class="tip-icon">i</span><span class="tip-box">Wie viel Text das KI-Tool auf einmal "lesen" kann. 200k Token = ca. 150.000 Wörter — also z.B. ein ganzes Buch. Je mehr, desto besser für lange Dokumente.</span></span>
+              </td>
+              <td class="hi best">200k Token</td><td class="ok">128k Token</td><td class="no">Begrenzt</td><td class="ok">1M Token</td>
+            </tr>
+            <tr><td class="fn">Kostenlose Version</td><td class="hi yes">✓</td><td class="yes">✓</td><td class="yes">✓ 2.000 Wörter</td><td class="yes">✓</td></tr>
+            <tr><td class="fn">Unser Testwert</td><td class="hi best">9.2 / 10</td><td>8.9 / 10</td><td>8.5 / 10</td><td>8.3 / 10</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.72rem;color:var(--t3);text-align:center;margin-top:10px">Alle Angaben laut unserem Test · Stand Juni 2026 · ohne Gewähr · <a href="#disclaimer">Affiliate-Hinweis</a></p>
+    </div>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- TESTSIEGER BUSINESS -->
+<section class="winner section" id="business" style="background:var(--bg2)">
+  <div class="container">
+    <div class="sec-header">
+      <span class="eyebrow purple">Unser Testsieger · Business & Verwaltung</span>
+      <h2>Die beste Buchhaltungssoftware für Selbstständige</h2>
+      <p>Getestet nach Bedienbarkeit, E-Rechnung, Preis und DATEV-Integration</p>
+    </div>
+
+    <div class="winner-tabs" id="biz-tabs">
+      <button class="winner-tab active purple" data-panel="lexoffice">Lexoffice</button>
+      <button class="winner-tab purple" data-panel="sevdesk">sevdesk</button>
+      <button class="winner-tab purple" data-panel="fastbill">FastBill</button>
+    </div>
+
+    <!-- Lexoffice -->
+    <div class="winner-panel active" id="panel-lexoffice">
+      <div>
+        <div class="winner-top">
+          <div class="winner-icon purple">📊</div>
+          <div><span class="winner-badge purple">★ Testsieger laut unserem Test</span></div>
+        </div>
+        <div class="winner-title">Lexoffice</div>
+        <p class="winner-desc">Lexoffice ist laut unserem Test die beste Buchhaltungssoftware für deutsche Selbstständige: günstigster Einstieg, vollständige E-Rechnungspflicht abgedeckt, einfachste Bedienung und DATEV-Schnittstelle für den Steuerberater.</p>
+        <div class="winner-feats">
+          <span class="winner-feat purple">E-Rechnung vollständig integriert</span>
+          <span class="winner-feat purple">DATEV-Export für Steuerberater</span>
+          <span class="winner-feat purple">Automatische Bankanbindung</span>
+          <span class="winner-feat purple">Günstigster Einstiegspreis im Test</span>
+        </div>
+        <div class="winner-cta-wrap">
+          <a href="https://lexoffice.de" target="_blank" rel="noopener sponsored" class="btn-win purple" data-aff="winner-lexoffice">6 Monate kostenlos testen →</a>
+          <a href="pages/lexoffice-test.html" class="btn-ghost">Zum Testbericht</a>
+          <span class="ad-tag">Anzeige</span>
+        </div>
+      </div>
+      <div class="winner-score">
+        <div class="score-num purple">9.4</div>
+        <div class="score-label">Unser Testwert</div>
+        <div class="score-stars">★★★★½</div>
+        <div class="score-price">Ab 8 €/Monat</div>
+        <div class="score-price-sub">6 Monate kostenlos (Aktionsangebot)</div>
+        <div class="score-disclaimer">Stand: Juni 2026 · ohne Gewähr</div>
+      </div>
+    </div>
+
+    <!-- sevdesk -->
+    <div class="winner-panel" id="panel-sevdesk">
+      <div>
+        <div class="winner-top">
+          <div class="winner-icon purple">🧾</div>
+          <div><span class="winner-badge purple">Beste KI-Belegerfassung</span></div>
+        </div>
+        <div class="winner-title">sevdesk</div>
+        <p class="winner-desc">sevdesk überzeugt laut unserem Test mit der stärksten KI-Belegerfassung: Belege per Foto erfassen, automatisch kategorisieren und buchen. Ideal für Selbstständige mit vielen Auslagen und Reisekosten.</p>
+        <div class="winner-feats">
+          <span class="winner-feat purple">Beste KI-Belegerfassung im Test</span>
+          <span class="winner-feat purple">GoBD-konform</span>
+          <span class="winner-feat purple">Starke mobile App</span>
+          <span class="winner-feat purple">14 Tage kostenlos testen</span>
+        </div>
+        <div class="winner-cta-wrap">
+          <a href="https://sevdesk.de" target="_blank" rel="noopener sponsored" class="btn-win purple" data-aff="winner-sevdesk">14 Tage kostenlos testen →</a>
+          <a href="pages/sevdesk-test.html" class="btn-ghost">Zum Testbericht</a>
+          <span class="ad-tag">Anzeige</span>
+        </div>
+      </div>
+      <div class="winner-score">
+        <div class="score-num purple">8.8</div>
+        <div class="score-label">Unser Testwert</div>
+        <div class="score-stars">★★★★☆</div>
+        <div class="score-price">Ab 13 €/Monat</div>
+        <div class="score-price-sub">14 Tage kostenlos testen</div>
+        <div class="score-disclaimer">Stand: Juni 2026 · ohne Gewähr</div>
+      </div>
+    </div>
+
+    <!-- FastBill -->
+    <div class="winner-panel" id="panel-fastbill">
+      <div>
+        <div class="winner-top">
+          <div class="winner-icon purple">⚡</div>
+          <div><span class="winner-badge purple">Schnellste Rechnungserstellung</span></div>
+        </div>
+        <div class="winner-title">FastBill</div>
+        <p class="winner-desc">FastBill punktet laut unserem Test mit der schnellsten Rechnungserstellung und einer übersichtlichen Oberfläche. Gut geeignet für Selbstständige die hauptsächlich Ausgangsrechnungen schreiben.</p>
+        <div class="winner-feats">
+          <span class="winner-feat purple">Schnelle Rechnungserstellung</span>
+          <span class="winner-feat purple">E-Rechnung unterstützt</span>
+          <span class="winner-feat purple">Übersichtliche Oberfläche</span>
+          <span class="winner-feat purple">14 Tage kostenlos testen</span>
+        </div>
+        <div class="winner-cta-wrap">
+          <a href="https://fastbill.com" target="_blank" rel="noopener sponsored" class="btn-win purple" data-aff="winner-fastbill">Kostenlos testen →</a>
+          <a href="pages/fastbill-test.html" class="btn-ghost">Zum Testbericht</a>
+          <span class="ad-tag">Anzeige</span>
+        </div>
+      </div>
+      <div class="winner-score">
+        <div class="score-num purple">8.2</div>
+        <div class="score-label">Unser Testwert</div>
+        <div class="score-stars">★★★½☆</div>
+        <div class="score-price">Ab 14 €/Monat</div>
+        <div class="score-price-sub">14 Tage kostenlos testen</div>
+        <div class="score-disclaimer">Stand: Juni 2026 · ohne Gewähr</div>
+      </div>
+    </div>
+
+    <!-- BUSINESS VERGLEICH -->
+    <div style="margin-top:48px">
+      <h3 style="font-family:var(--fd);font-size:1.2rem;margin-bottom:20px;text-align:center">Buchhaltungssoftware im Direktvergleich</h3>
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Merkmal</th>
+              <th class="hi-p">Lexoffice</th>
+              <th>sevdesk</th>
+              <th>FastBill</th>
+              <th>Papierkram</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="fn">Preis ab</td><td class="hi-p best-p">8 €/Monat</td><td>13 €/Monat</td><td>14 €/Monat</td><td>9 €/Monat</td></tr>
+            <tr>
+              <td class="fn">
+                <span class="tip">E-Rechnung<span class="tip-icon">i</span><span class="tip-box">Seit 2025 Pflicht für B2B-Rechnungen in Deutschland. Rechnungen müssen in einem strukturierten digitalen Format (XRechnung oder ZUGFeRD) übermittelt werden — ein einfaches PDF reicht nicht mehr.</span></span>
+              </td>
+              <td class="hi-p yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="ok">In Arbeit</td>
+            </tr>
+            <tr>
+              <td class="fn">
+                <span class="tip">DATEV-Export<span class="tip-icon">i</span><span class="tip-box">DATEV ist das Standardformat für deutsche Steuerberater. Mit einem DATEV-Export kannst du deine Buchhaltungsdaten direkt an deinen Steuerberater übergeben — spart beiden Zeit und Geld.</span></span>
+              </td>
+              <td class="hi-p yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td>
+            </tr>
+            <tr><td class="fn">KI-Belegerfassung</td><td class="hi-p ok">Einfach</td><td class="yes">Sehr gut</td><td class="ok">Gut</td><td class="no">✗</td></tr>
+            <tr><td class="fn">Bankanbindung</td><td class="hi-p yes">Automatisch</td><td class="yes">✓</td><td class="yes">✓</td><td class="ok">Manuell</td></tr>
+            <tr>
+              <td class="fn">
+                <span class="tip">GoBD-konform<span class="tip-icon">i</span><span class="tip-box">GoBD = Grundsätze zur ordnungsmäßigen Buchführung. Das Finanzamt schreibt vor wie Belege digital aufbewahrt werden müssen. GoBD-konforme Software macht das automatisch richtig.</span></span>
+              </td>
+              <td class="hi-p yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td>
+            </tr>
+            <tr><td class="fn">Unser Testwert</td><td class="hi-p best-p">9.4 / 10</td><td>8.8 / 10</td><td>8.2 / 10</td><td>7.5 / 10</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.72rem;color:var(--t3);text-align:center;margin-top:10px">Alle Angaben laut unserem Test · Stand Juni 2026 · ohne Gewähr · <a href="#disclaimer">Affiliate-Hinweis</a></p>
+    </div>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- ALLE TOOLS -->
+<section class="section" id="alle-tools">
+  <div class="container">
+    <div class="sec-header">
       <span class="eyebrow">Tool-Datenbank</span>
-      <h2>Alle getesteten KI-Tools im Überblick</h2>
-      <p>Klicke auf eine Kategorie um zu filtern</p>
+      <h2>Alle getesteten Tools</h2>
+      <p>Nach Kategorie filtern</p>
     </div>
-
-    <!-- Filter -->
-    <div class="filter-bar" role="toolbar" aria-label="Kategoriefilter">
-      <button class="filter-btn active" data-filter="all">Alle Tools</button>
-      <button class="filter-btn" data-filter="ki-schreiben">KI Schreiben</button>
-      <button class="filter-btn" data-filter="ki-assistent">KI Assistent</button>
-      <button class="filter-btn" data-filter="buchhaltung">Buchhaltung</button>
-      <button class="filter-btn" data-filter="projektmanagement">Projektmanagement</button>
-      <button class="filter-btn" data-filter="design">Design</button>
+    <div class="filter-bar">
+      <button class="fbtn on" data-f="all">Alle</button>
+      <button class="fbtn" data-f="ki-assistent">KI Assistent</button>
+      <button class="fbtn" data-f="ki-schreiben">KI Schreiben</button>
+      <button class="fbtn" data-f="buchhaltung">Buchhaltung</button>
+      <button class="fbtn" data-f="projektmanagement">Projektmanagement</button>
     </div>
+    <div class="grid">
 
-    <!-- Tool Cards -->
-    <div class="tools-grid">
-
-      <!-- ChatGPT Plus -->
-      <article class="tool-card featured" data-category="ki-assistent"
-               itemscope itemtype="https://schema.org/SoftwareApplication">
-        <div class="tool-header">
-          <div class="tool-icon">🤖</div>
-          <div>
-            <div class="tool-name" itemprop="name">ChatGPT Plus</div>
-            <div class="tool-category">KI Assistent</div>
+      <article class="card top-pick" data-c="ki-assistent">
+        <div class="card-head"><div class="card-ico">💡</div><div><div class="card-name">Claude Pro</div><div class="card-cat">KI Assistent</div></div></div>
+        <p class="card-desc">Laut unserem Test der stärkste KI-Assistent für deutsche Texte. 200k Token Kontext, Webzugriff und nuanciertes Schreiben auf Deutsch.</p>
+        <div class="card-tags"><span class="ctag">200k Kontext</span><span class="ctag">Webzugriff</span><span class="ctag">Kostenlose Version</span></div>
+        <div class="card-foot"><div><div class="card-price">20 $/Monat <span>· kostenlos verfügbar</span></div><div class="card-stars">★★★★½</div></div></div>
+        <div class="cbtn-wrap">
+          <div class="card-btns">
+            <a href="https://claude.ai" target="_blank" rel="noopener sponsored" class="cbtn p" data-aff="card-claude">Kostenlos testen →</a>
+            <a href="pages/claude-pro-test.html" class="cbtn s">Test lesen</a>
           </div>
-        </div>
-        <p class="tool-desc" itemprop="description">
-          Der leistungsstärkste KI-Assistent für Texte, Code, Analysen und Automatisierung.
-          GPT-4o mit Webzugriff und Plugin-Ökosystem.
-        </p>
-        <div class="tool-tags">
-          <span class="tag">DSGVO-beachten</span>
-          <span class="tag">Englisch-fokussiert</span>
-          <span class="tag">API verfügbar</span>
-        </div>
-        <div class="tool-meta">
-          <div class="tool-price">20 $/Monat <span>· kostenlose Version</span></div>
-          <div class="stars" aria-label="4.5 von 5 Sternen">★★★★½</div>
-        </div>
-        <div class="tool-cta">
-          <a href="https://chat.openai.com" target="_blank" rel="noopener sponsored"
-             class="btn-card-primary" data-affiliate="chatgpt-plus">
-            Jetzt testen →
-          </a>
-          <a href="pages/chatgpt-plus-test.html" class="btn-card-secondary">Test lesen</a>
+          <div class="cbtn-adlabel">Anzeige · Stand Juni 2026 · ohne Gewähr</div>
         </div>
       </article>
 
-      <!-- Claude Pro -->
-      <article class="tool-card" data-category="ki-assistent"
-               itemscope itemtype="https://schema.org/SoftwareApplication">
-        <div class="tool-header">
-          <div class="tool-icon">💡</div>
-          <div>
-            <div class="tool-name" itemprop="name">Claude Pro</div>
-            <div class="tool-category">KI Assistent</div>
+      <article class="card" data-c="ki-assistent">
+        <div class="card-head"><div class="card-ico">🤖</div><div><div class="card-name">ChatGPT Plus</div><div class="card-cat">KI Assistent</div></div></div>
+        <p class="card-desc">Der meistgenutzte KI-Assistent weltweit. Stark bei Code, Datenanalyse und kreativen Aufgaben. Größtes Plugin-Ökosystem verfügbar.</p>
+        <div class="card-tags"><span class="ctag">Plugins</span><span class="ctag">Bildgenerierung</span><span class="ctag">Webzugriff</span></div>
+        <div class="card-foot"><div><div class="card-price">20 $/Monat <span>· kostenlos verfügbar</span></div><div class="card-stars">★★★★½</div></div></div>
+        <div class="cbtn-wrap">
+          <div class="card-btns">
+            <a href="https://chat.openai.com" target="_blank" rel="noopener sponsored" class="cbtn p" data-aff="card-chatgpt">Kostenlos testen →</a>
+            <a href="pages/chatgpt-plus-test.html" class="cbtn s">Test lesen</a>
           </div>
-        </div>
-        <p class="tool-desc" itemprop="description">
-          Anthropics KI überzeugt mit besonders langen Texten, nuanciertem Schreiben
-          und komplexen Analysen. Ideal für tiefgründige Aufgaben.
-        </p>
-        <div class="tool-tags">
-          <span class="tag">Langer Kontext</span>
-          <span class="tag">Nuanciertes Schreiben</span>
-          <span class="tag">Sicher</span>
-        </div>
-        <div class="tool-meta">
-          <div class="tool-price">20 $/Monat <span>· kostenlose Version</span></div>
-          <div class="stars" aria-label="4.5 von 5 Sternen">★★★★½</div>
-        </div>
-        <div class="tool-cta">
-          <a href="https://claude.ai" target="_blank" rel="noopener sponsored"
-             class="btn-card-primary" data-affiliate="claude-pro">
-            Jetzt testen →
-          </a>
-          <a href="pages/claude-pro-test.html" class="btn-card-secondary">Test lesen</a>
+          <div class="cbtn-adlabel">Anzeige · Stand Juni 2026 · ohne Gewähr</div>
         </div>
       </article>
 
-      <!-- Neuroflash -->
-      <article class="tool-card featured" data-category="ki-schreiben"
-               itemscope itemtype="https://schema.org/SoftwareApplication">
-        <div class="tool-header">
-          <div class="tool-icon">✍️</div>
-          <div>
-            <div class="tool-name" itemprop="name">neuroflash</div>
-            <div class="tool-category">KI Schreiben</div>
+      <article class="card top-pick" data-c="ki-schreiben">
+        <div class="card-head"><div class="card-ico">✍️</div><div><div class="card-name">neuroflash</div><div class="card-cat">KI Schreiben</div></div></div>
+        <p class="card-desc">Einziges getestetes Tool mit DSGVO-Konformität und EU-Servern. Exzellente deutsche Textqualität für Marketing und SEO-Content.</p>
+        <div class="card-tags"><span class="ctag">DSGVO ✓</span><span class="ctag">EU-Server</span><span class="ctag">SEO-Texte</span></div>
+        <div class="card-foot"><div><div class="card-price">Ab 29 €/Monat <span>· kostenlos testen</span></div><div class="card-stars">★★★★☆</div></div></div>
+        <div class="cbtn-wrap">
+          <div class="card-btns">
+            <a href="https://neuroflash.com" target="_blank" rel="noopener sponsored" class="cbtn p" data-aff="card-neuroflash">Kostenlos testen →</a>
+            <a href="pages/neuroflash-test.html" class="cbtn s">Test lesen</a>
           </div>
-        </div>
-        <p class="tool-desc" itemprop="description">
-          Das beste KI-Schreibtool für den deutschen Markt. Speziell auf deutsche
-          Textqualität optimiert – ideal für Marketing, Blog und Social Media.
-        </p>
-        <div class="tool-tags">
-          <span class="tag">Deutsches Unternehmen</span>
-          <span class="tag">DSGVO-konform</span>
-          <span class="tag">SEO-Texte</span>
-        </div>
-        <div class="tool-meta">
-          <div class="tool-price">Ab 29 €/Monat <span>· kostenlos testen</span></div>
-          <div class="stars" aria-label="4 von 5 Sternen">★★★★☆</div>
-        </div>
-        <div class="tool-cta">
-          <a href="https://neuroflash.com" target="_blank" rel="noopener sponsored"
-             class="btn-card-primary" data-affiliate="neuroflash">
-            Kostenlos testen →
-          </a>
-          <a href="pages/neuroflash-test.html" class="btn-card-secondary">Test lesen</a>
+          <div class="cbtn-adlabel">Anzeige · Stand Juni 2026 · ohne Gewähr</div>
         </div>
       </article>
 
-      <!-- Lexoffice -->
-      <article class="tool-card featured" data-category="buchhaltung"
-               itemscope itemtype="https://schema.org/SoftwareApplication">
-        <div class="tool-header">
-          <div class="tool-icon">📊</div>
-          <div>
-            <div class="tool-name" itemprop="name">Lexoffice</div>
-            <div class="tool-category">Buchhaltung</div>
+      <article class="card top-pick" data-c="buchhaltung">
+        <div class="card-head"><div class="card-ico">📊</div><div><div class="card-name">Lexoffice</div><div class="card-cat purple">Buchhaltung</div></div></div>
+        <p class="card-desc">Laut unserem Test die beste Buchhaltungssoftware für Freelancer. E-Rechnung, DATEV-Export, automatische Bankanbindung — alles inklusive.</p>
+        <div class="card-tags"><span class="ctag">E-Rechnung ✓</span><span class="ctag">DATEV</span><span class="ctag">GoBD-konform</span></div>
+        <div class="card-foot"><div><div class="card-price">Ab 8 €/Monat <span>· 6 Monate gratis</span></div><div class="card-stars">★★★★½</div></div></div>
+        <div class="cbtn-wrap">
+          <div class="card-btns">
+            <a href="https://lexoffice.de" target="_blank" rel="noopener sponsored" class="cbtn p" data-aff="card-lexoffice">6 Monate gratis →</a>
+            <a href="pages/lexoffice-test.html" class="cbtn s">Test lesen</a>
           </div>
-        </div>
-        <p class="tool-desc" itemprop="description">
-          Marktführer für Buchhaltung bei Selbstständigen in Deutschland. E-Rechnung,
-          DATEV-Export, automatische Bankanbindung – alles in einer App.
-        </p>
-        <div class="tool-tags">
-          <span class="tag">E-Rechnung ready</span>
-          <span class="tag">DATEV-Export</span>
-          <span class="tag">Deutsches Recht</span>
-        </div>
-        <div class="tool-meta">
-          <div class="tool-price">Ab 8 €/Monat <span>· 6 Monate gratis</span></div>
-          <div class="stars" aria-label="4.5 von 5 Sternen">★★★★½</div>
-        </div>
-        <div class="tool-cta">
-          <a href="https://lexoffice.de" target="_blank" rel="noopener sponsored"
-             class="btn-card-primary" data-affiliate="lexoffice">
-            6 Monate gratis →
-          </a>
-          <a href="pages/lexoffice-test.html" class="btn-card-secondary">Test lesen</a>
+          <div class="cbtn-adlabel">Anzeige · Stand Juni 2026 · ohne Gewähr</div>
         </div>
       </article>
 
-      <!-- sevdesk -->
-      <article class="tool-card" data-category="buchhaltung"
-               itemscope itemtype="https://schema.org/SoftwareApplication">
-        <div class="tool-header">
-          <div class="tool-icon">🧾</div>
-          <div>
-            <div class="tool-name" itemprop="name">sevdesk</div>
-            <div class="tool-category">Buchhaltung</div>
+      <article class="card" data-c="buchhaltung">
+        <div class="card-head"><div class="card-ico">🧾</div><div><div class="card-name">sevdesk</div><div class="card-cat purple">Buchhaltung</div></div></div>
+        <p class="card-desc">Beste KI-Belegerfassung im Test. Belege per Foto erfassen, automatisch kategorisieren. Besonders stark für Selbstständige mit vielen Auslagen.</p>
+        <div class="card-tags"><span class="ctag">KI-Belege</span><span class="ctag">GoBD-konform</span><span class="ctag">Mobile App</span></div>
+        <div class="card-foot"><div><div class="card-price">Ab 13 €/Monat <span>· 14 Tage gratis</span></div><div class="card-stars">★★★★☆</div></div></div>
+        <div class="cbtn-wrap">
+          <div class="card-btns">
+            <a href="https://sevdesk.de" target="_blank" rel="noopener sponsored" class="cbtn p" data-aff="card-sevdesk">Gratis testen →</a>
+            <a href="pages/sevdesk-test.html" class="cbtn s">Test lesen</a>
           </div>
-        </div>
-        <p class="tool-desc" itemprop="description">
-          Flexible Buchhaltungssoftware mit KI-Belegerfassung. Besonders stark
-          bei automatischer Kategorisierung und Steuerauswertungen.
-        </p>
-        <div class="tool-tags">
-          <span class="tag">KI-Belegerfassung</span>
-          <span class="tag">GoBD-konform</span>
-          <span class="tag">App verfügbar</span>
-        </div>
-        <div class="tool-meta">
-          <div class="tool-price">Ab 13 €/Monat <span>· 14 Tage gratis</span></div>
-          <div class="stars" aria-label="4 von 5 Sternen">★★★★☆</div>
-        </div>
-        <div class="tool-cta">
-          <a href="https://sevdesk.de" target="_blank" rel="noopener sponsored"
-             class="btn-card-primary" data-affiliate="sevdesk">
-            Gratis testen →
-          </a>
-          <a href="pages/sevdesk-test.html" class="btn-card-secondary">Test lesen</a>
+          <div class="cbtn-adlabel">Anzeige · Stand Juni 2026 · ohne Gewähr</div>
         </div>
       </article>
 
-      <!-- Notion AI -->
-      <article class="tool-card" data-category="projektmanagement"
-               itemscope itemtype="https://schema.org/SoftwareApplication">
-        <div class="tool-header">
-          <div class="tool-icon">📝</div>
-          <div>
-            <div class="tool-name" itemprop="name">Notion AI</div>
-            <div class="tool-category">Projektmanagement</div>
+      <article class="card" data-c="projektmanagement">
+        <div class="card-head"><div class="card-ico">📝</div><div><div class="card-name">Notion AI</div><div class="card-cat purple">Projektmanagement</div></div></div>
+        <p class="card-desc">All-in-one Workspace mit integriertem KI-Assistenten. Projekte, Notizen und Kundenmanagement in einer Oberfläche — sehr beliebt bei Freelancern.</p>
+        <div class="card-tags"><span class="ctag">All-in-one</span><span class="ctag">KI integriert</span><span class="ctag">Kostenlose Version</span></div>
+        <div class="card-foot"><div><div class="card-price">10 $/Monat <span>· kostenlose Version</span></div><div class="card-stars">★★★★☆</div></div></div>
+        <div class="cbtn-wrap">
+          <div class="card-btns">
+            <a href="https://notion.so" target="_blank" rel="noopener sponsored" class="cbtn p" data-aff="card-notion">Kostenlos starten →</a>
+            <a href="pages/notion-ai-test.html" class="cbtn s">Test lesen</a>
           </div>
-        </div>
-        <p class="tool-desc" itemprop="description">
-          All-in-one Workspace mit integrierter KI. Perfekt für Freelancer
-          die Projekte, Notizen und Kunden an einem Ort verwalten wollen.
-        </p>
-        <div class="tool-tags">
-          <span class="tag">All-in-one</span>
-          <span class="tag">KI integriert</span>
-          <span class="tag">Kostenlose Version</span>
-        </div>
-        <div class="tool-meta">
-          <div class="tool-price">10 $/Monat <span>· kostenlose Version</span></div>
-          <div class="stars" aria-label="4 von 5 Sternen">★★★★☆</div>
-        </div>
-        <div class="tool-cta">
-          <a href="https://notion.so" target="_blank" rel="noopener sponsored"
-             class="btn-card-primary" data-affiliate="notion">
-            Kostenlos starten →
-          </a>
-          <a href="pages/notion-ai-test.html" class="btn-card-secondary">Test lesen</a>
+          <div class="cbtn-adlabel">Anzeige · Stand Juni 2026 · ohne Gewähr</div>
         </div>
       </article>
 
-    </div><!-- /tools-grid -->
+    </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════
-     VERGLEICHSTABELLE
-══════════════════════════════════════ -->
-<section class="section" id="vergleich" style="background:var(--navy); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+<!-- FAQ -->
+<section class="section" id="faq" style="background:var(--bg2);border-top:1px solid var(--border)">
   <div class="container">
-    <div class="section-header">
-      <span class="eyebrow">Direktvergleich</span>
-      <h2>KI-Assistenten im Vergleich</h2>
-      <p>Die wichtigsten Funktionen auf einen Blick</p>
+    <div class="sec-header">
+      <span class="eyebrow">FAQ</span>
+      <h2>Häufige Fragen</h2>
     </div>
-
-    <div class="comparison-wrap">
-      <table class="comparison-table" role="table" aria-label="Vergleich KI-Assistenten">
-        <thead>
-          <tr>
-            <th>Funktion</th>
-            <th>ChatGPT Plus</th>
-            <th class="col-highlight">Claude Pro</th>
-            <th>neuroflash</th>
-            <th>Gemini Advanced</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="feature-name">Preis/Monat</td>
-            <td>20 $</td>
-            <td class="col-highlight">20 $</td>
-            <td>29 €</td>
-            <td>22 €</td>
-          </tr>
-          <tr>
-            <td class="feature-name">Deutsche Textqualität</td>
-            <td><span class="partial">Gut</span></td>
-            <td class="col-highlight"><span class="check">✓ Sehr gut</span></td>
-            <td><span class="check">✓ Exzellent</span></td>
-            <td><span class="partial">Gut</span></td>
-          </tr>
-          <tr>
-            <td class="feature-name">DSGVO-konform</td>
-            <td><span class="cross">✗</span></td>
-            <td class="col-highlight"><span class="cross">✗</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="cross">✗</span></td>
-          </tr>
-          <tr>
-            <td class="feature-name">Webzugriff</td>
-            <td><span class="check">✓</span></td>
-            <td class="col-highlight"><span class="check">✓</span></td>
-            <td><span class="cross">✗</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td class="feature-name">Langer Kontext</td>
-            <td><span class="partial">128k Token</span></td>
-            <td class="col-highlight"><span class="check">✓ 200k Token</span></td>
-            <td><span class="cross">✗</span></td>
-            <td><span class="partial">1M Token</span></td>
-          </tr>
-          <tr>
-            <td class="feature-name">API verfügbar</td>
-            <td><span class="check">✓</span></td>
-            <td class="col-highlight"><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td class="feature-name">SEO-Texte</td>
-            <td><span class="partial">Begrenzt</span></td>
-            <td class="col-highlight"><span class="partial">Begrenzt</span></td>
-            <td><span class="check">✓ Spezialisiert</span></td>
-            <td><span class="partial">Begrenzt</span></td>
-          </tr>
-          <tr>
-            <td class="feature-name">Kostenlose Version</td>
-            <td><span class="check">✓</span></td>
-            <td class="col-highlight"><span class="check">✓</span></td>
-            <td><span class="check">✓ 2.000 Wörter</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td class="feature-name">Unser Urteil</td>
-            <td>Sehr gut</td>
-            <td class="col-highlight" style="color:var(--cyan); font-weight:700;">★ Testsieger</td>
-            <td>Beste DE-Qualität</td>
-            <td>Google-Integration</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <p style="text-align:center; margin-top:24px; font-size:.8rem; color:var(--text-3);">
-      * Alle Preise ohne Gewähr · Stand: Juni 2026 · <a href="#disclaimer">Affiliate-Hinweis</a>
-    </p>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════
-     FAQ
-══════════════════════════════════════ -->
-<section class="section" id="faq">
-  <div class="container">
-    <div class="section-header">
-      <span class="eyebrow">Häufige Fragen</span>
-      <h2>Alles was du wissen musst</h2>
-    </div>
-
-    <div class="faq-list">
-
+    <div class="faq-wrap">
       <div class="faq-item">
-        <button class="faq-question">Welches KI-Tool ist das beste für Selbstständige in Deutschland?</button>
-        <div class="faq-answer">
-          Das hängt stark vom Anwendungsfall ab. Für allgemeine Aufgaben und nuanciertes
-          Schreiben auf Deutsch empfehlen wir <strong>Claude Pro</strong>. Für spezifische
-          Marketing-Texte und SEO ist <strong>neuroflash</strong> als deutsches Tool oft
-          die bessere Wahl, da es DSGVO-konform ist und auf deutsche Textqualität optimiert wurde.
-        </div>
+        <button class="faq-q">Welcher KI-Assistent ist der beste für Selbstständige in Deutschland?</button>
+        <div class="faq-a">Laut unserem Test überzeugt Claude Pro mit der besten deutschen Textqualität. Für spezifische Marketing-Texte und DSGVO-Konformität ist neuroflash die bessere Wahl. ChatGPT Plus punktet beim größten Plugin-Ökosystem und bei Code-Aufgaben. Alle drei bieten kostenlose Versionen zum Testen.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question">Sind KI-Tools DSGVO-konform?</button>
-        <div class="faq-answer">
-          Die meisten großen KI-Tools (ChatGPT, Claude, Gemini) speichern Daten auf
-          US-Servern und sind damit für sensible Geschäftsdaten problematisch.
-          Deutsche/europäische Alternativen wie <strong>neuroflash</strong> oder
-          <strong>Mistral</strong> bieten EU-Serverhaltung. Für Buchhaltung empfehlen
-          wir ausschließlich DSGVO-konforme deutsche Anbieter wie Lexoffice oder sevdesk.
-        </div>
+        <button class="faq-q">Welche Buchhaltungssoftware empfehlt sich für Freelancer?</button>
+        <div class="faq-a">Laut unserem Test ist Lexoffice für die meisten deutschen Freelancer die beste Wahl: günstigster Einstieg ab 8 €/Monat, vollständige E-Rechnungspflicht abgedeckt und einfachste Bedienung im Test. Wer viele Belege unterwegs erfassen muss, ist mit sevdesk gut bedient.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question">Welche Buchhaltungssoftware empfiehlt sich für Freelancer?</button>
-        <div class="faq-answer">
-          Für die meisten deutschen Freelancer ist <strong>Lexoffice</strong> die beste Wahl:
-          günstiger Einstieg (ab 8 €/Monat), E-Rechnung-ready seit 2025, einfache Bedienung
-          und DATEV-Schnittstelle für den Steuerberater. Als Alternative mit stärkerer
-          KI-Belegerfassung empfehlen wir <strong>sevdesk</strong>.
-        </div>
+        <button class="faq-q">Sind KI-Tools DSGVO-konform?</button>
+        <div class="faq-a">Die meisten großen KI-Tools (ChatGPT, Claude, Gemini) speichern Daten auf US-Servern. Für sensible Geschäftsdaten ist das problematisch. neuroflash ist als deutsches Tool vollständig DSGVO-konform mit EU-Servern. Für Buchhaltungsdaten empfehlen wir ausschließlich deutsche Anbieter wie Lexoffice oder sevdesk.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question">Wie verdient diese Website Geld?</button>
-        <div class="faq-answer">
-          Diese Website ist transparent: Einige Links sind Affiliate-Links. Wenn du
-          über unsere Links ein Tool kaufst, erhalten wir eine Provision – für dich
-          entstehen dabei keine Mehrkosten. Unsere Bewertungen und Empfehlungen sind
-          davon unabhängig; wir testen alle Tools selbst und zeigen auch Nachteile auf.
-          Kein Anbieter kann eine positive Bewertung kaufen.
-        </div>
+        <button class="faq-q">Wie verdient diese Website Geld?</button>
+        <div class="faq-a">Einige Links auf dieser Seite sind Affiliate-Links — erkennbar am "Anzeige"-Hinweis direkt beim Link. Wenn du über unsere Links ein Tool kaufst oder abonnierst, erhalten wir eine Provision. Für dich entstehen dabei keine Mehrkosten. Unsere Testergebnisse und Bewertungen sind davon vollständig unabhängig.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question">Wie oft werden die Tests aktualisiert?</button>
-        <div class="faq-answer">
-          Wir überprüfen alle Vergleiche mindestens quartalsweise und aktualisieren
-          sie bei größeren Produkt-Updates sofort. Jeder Artikel zeigt das
-          Datum der letzten Überprüfung. KI entwickelt sich schnell – wir halten dich auf dem Laufenden.
-        </div>
+        <button class="faq-q">Wie oft werden die Tests aktualisiert?</button>
+        <div class="faq-a">Wir überprüfen alle Vergleiche regelmäßig und aktualisieren sie bei Preisänderungen oder neuen Funktionen. Jeder Artikel und Vergleich trägt ein Aktualisierungsdatum. Alle Preisangaben stehen unter dem Vorbehalt "ohne Gewähr" — prüfe die aktuellen Preise immer direkt beim Anbieter.</div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════
-     NEWSLETTER
-══════════════════════════════════════ -->
+<!-- NEWSLETTER -->
 <div class="container">
-  <div class="newsletter">
+  <div class="nl">
     <span class="eyebrow">Newsletter</span>
-    <h2>Neue Tools sofort kennen</h2>
-    <p>Monatlich: die besten neuen KI-Tools, ehrliche Kurztests, kein Spam.</p>
-    <form class="newsletter-form" novalidate>
+    <h2>Neue Tests sofort kennen</h2>
+    <p>Monatlich: neue KI-Tools, ehrliche Kurztests, keine Werbung.</p>
+    <form class="nl-form" novalidate id="nlform">
       <input type="email" placeholder="deine@email.de" required aria-label="E-Mail-Adresse">
-      <button type="submit" class="btn-primary">Anmelden</button>
+      <button type="submit" style="background:var(--cyan);color:#000;padding:11px 22px;border-radius:var(--r1);font-weight:700;font-size:.9rem;border:none;cursor:pointer">Anmelden</button>
     </form>
+    <p class="nl-hint">Kein Spam. Abmeldung jederzeit möglich. Deine E-Mail wird nicht weitergegeben.</p>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════
-     FOOTER
-══════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="/" class="nav-logo">KI<span>Tools</span>Vergleich</a>
-        <p>Unabhängige Tests und Vergleiche der besten KI-Tools und SaaS-Software für deutschsprachige Selbstständige.</p>
+      <div>
+        <a href="/" class="f-logo">KI<span>Tools</span>Vergleich</a>
+        <p class="f-desc">Unabhängige Tests der besten KI-Tools und Business-Software für deutschsprachige Selbstständige und Freelancer.</p>
       </div>
-
-      <div class="footer-col">
-        <h4>Kategorien</h4>
-        <ul>
-          <li><a href="pages/ki-assistenten.html">KI-Assistenten</a></li>
-          <li><a href="pages/ki-schreiben.html">KI Schreiben</a></li>
-          <li><a href="pages/buchhaltung.html">Buchhaltung</a></li>
-          <li><a href="pages/projektmanagement.html">Projektmanagement</a></li>
-          <li><a href="pages/design-tools.html">Design-Tools</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Beliebt</h4>
-        <ul>
-          <li><a href="pages/chatgpt-plus-test.html">ChatGPT Plus Test</a></li>
-          <li><a href="pages/lexoffice-test.html">Lexoffice Test</a></li>
-          <li><a href="pages/neuroflash-test.html">neuroflash Test</a></li>
-          <li><a href="pages/claude-pro-test.html">Claude Pro Test</a></li>
-          <li><a href="pages/notion-ai-test.html">Notion AI Test</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Rechtliches</h4>
-        <ul>
-          <li><a href="pages/impressum.html">Impressum</a></li>
-          <li><a href="pages/datenschutz.html">Datenschutz</a></li>
-          <li><a href="pages/affiliate-hinweis.html">Affiliate-Hinweis</a></li>
-          <li><a href="pages/ueber-uns.html">Über uns</a></li>
-        </ul>
-      </div>
+      <div class="f-col"><h4>KI-Tools</h4><ul>
+        <li><a href="pages/ki-assistenten.html">KI-Assistenten</a></li>
+        <li><a href="pages/ki-schreiben.html">KI Schreiben</a></li>
+        <li><a href="pages/claude-pro-test.html">Claude Pro Test</a></li>
+        <li><a href="pages/chatgpt-plus-test.html">ChatGPT Plus Test</a></li>
+      </ul></div>
+      <div class="f-col"><h4>Business</h4><ul>
+        <li><a href="pages/buchhaltung.html">Buchhaltungssoftware</a></li>
+        <li><a href="pages/lexoffice-test.html">Lexoffice Test</a></li>
+        <li><a href="pages/sevdesk-test.html">sevdesk Test</a></li>
+        <li><a href="pages/projektmanagement.html">Projektmanagement</a></li>
+      </ul></div>
+      <div class="f-col"><h4>Rechtliches</h4><ul>
+        <li><a href="pages/impressum.html">Impressum</a></li>
+        <li><a href="pages/datenschutz.html">Datenschutz</a></li>
+        <li><a href="pages/affiliate-hinweis.html">Affiliate-Hinweis</a></li>
+        <li><a href="pages/ueber-uns.html">Über uns</a></li>
+      </ul></div>
     </div>
-
-    <div id="disclaimer" class="disclaimer">
-      <strong>Affiliate-Hinweis:</strong> Diese Website enthält Affiliate-Links.
-      Kaufst du über unsere Links, erhalten wir eine Provision ohne Mehrkosten für dich.
-      Alle Tests sind redaktionell unabhängig. Letzte Aktualisierung: Juni 2026.
+    <div class="disclaimer" id="disclaimer">
+      <strong>Affiliate-Hinweis:</strong> Diese Website enthält Affiliate-Links, die mit "Anzeige" gekennzeichnet sind. Kaufst du über diese Links ein Produkt, erhalten wir eine Provision — für dich ohne Mehrkosten. Unsere Testergebnisse und Empfehlungen sind davon unabhängig. Alle Preisangaben ohne Gewähr, Stand Juni 2026. Aktuelle Preise direkt beim Anbieter prüfen.
     </div>
-
-    <div class="footer-bottom">
-      <span>© 2026 KIToolsVergleich.de – Alle Rechte vorbehalten</span>
-      <span>Mit ❤️ für deutschsprachige Selbstständige</span>
+    <div class="f-bottom">
+      <span>© 2026 KIToolsVergleich.de · Alle Rechte vorbehalten</span>
+      <span><a href="pages/impressum.html" style="color:var(--t3)">Impressum</a> · <a href="pages/datenschutz.html" style="color:var(--t3)">Datenschutz</a></span>
     </div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+
+  // Tab-Switching KI
+  document.querySelectorAll('#ki-tabs .winner-tab').forEach(tab=>{
+    tab.addEventListener('click',()=>{
+      document.querySelectorAll('#ki-tabs .winner-tab').forEach(t=>t.classList.remove('active'));
+      tab.classList.add('active');
+      document.querySelectorAll('#ki .winner-panel').forEach(p=>p.classList.remove('active'));
+      document.getElementById('panel-'+tab.dataset.panel).classList.add('active');
+    });
+  });
+
+  // Tab-Switching Business
+  document.querySelectorAll('#biz-tabs .winner-tab').forEach(tab=>{
+    tab.addEventListener('click',()=>{
+      document.querySelectorAll('#biz-tabs .winner-tab').forEach(t=>t.classList.remove('active'));
+      tab.classList.add('active');
+      document.querySelectorAll('#business .winner-panel').forEach(p=>p.classList.remove('active'));
+      document.getElementById('panel-'+tab.dataset.panel).classList.add('active');
+    });
+  });
+
+  // Filter
+  document.querySelectorAll('.fbtn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('on'));
+      btn.classList.add('on');
+      const f=btn.dataset.f;
+      document.querySelectorAll('.card').forEach(c=>{
+        c.classList.toggle('hidden', f!=='all' && c.dataset.c!==f);
+      });
+    });
+  });
+
+  // FAQ
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const item=btn.closest('.faq-item');
+      const isOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+      if(!isOpen) item.classList.add('open');
+    });
+  });
+
+  // Sticky Bar
+  const sbar=document.getElementById('sbar');
+  window.addEventListener('scroll',()=>{
+    sbar.classList.toggle('show', window.scrollY>500);
+  },{passive:true});
+
+  // Newsletter
+  document.getElementById('nlform').addEventListener('submit',e=>{
+    e.preventDefault();
+    const inp=e.target.querySelector('input');
+    if(inp&&inp.value) e.target.innerHTML='<p style="color:var(--cyan);font-weight:600">✓ Danke! Bitte bestätige deine E-Mail.</p>';
+  });
+
+  // Affiliate tracking
+  document.querySelectorAll('[data-aff]').forEach(l=>{
+    l.addEventListener('click',()=>{
+      console.log('[Affiliate Click]',l.dataset.aff);
+    });
+  });
+
+});
+</script>
 </body>
 </html>
