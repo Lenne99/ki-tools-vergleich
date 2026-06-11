@@ -1,4 +1,4 @@
-# KIToolsVergleich.de – Affiliate Website
+# Vergleichscheck.com – Affiliate Website
 
 ## Struktur
 ```
@@ -15,7 +15,7 @@ affiliate-site/
 
 ## Auf GitHub hochladen (einmalig)
 
-1. github.com öffnen → "New repository" → Name: `ki-tools-vergleich`
+1. github.com öffnen → "New repository" → Name: `vergleichscheck`
 2. "Upload files" klicken
 3. Alle Dateien per Drag & Drop hochladen
 4. "Commit changes" klicken
