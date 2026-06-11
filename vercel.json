@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "ki-tools-vergleich",
+  "name": "vergleichscheck",
   "builds": [
     {
       "src": "**/*.html",
