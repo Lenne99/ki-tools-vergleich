@@ -317,6 +317,33 @@
     }
     .btn:hover { opacity: .85; }
 
+    /* ── DIFFICULTY ── */
+    .diff-wrap {
+      display: none;
+      flex-direction: column; align-items: center; gap: 10px;
+    }
+    .diff-wrap.visible { display: flex; }
+    .diff-label {
+      font-size: .75rem; font-weight: 700; color: var(--t3);
+      text-transform: uppercase; letter-spacing: .08em;
+    }
+    .diff-toggle {
+      display: flex; gap: 6px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px; padding: 5px;
+    }
+    .diff-btn {
+      padding: 7px 18px; border-radius: 8px;
+      border: none; cursor: pointer;
+      font-size: .82rem; font-weight: 700;
+      background: transparent; color: var(--t2);
+      transition: all .2s; white-space: nowrap;
+    }
+    .diff-btn.easy.active   { background: #16a34a; color: #fff; box-shadow: 0 0 12px rgba(22,163,74,.4); }
+    .diff-btn.medium.active { background: #d97706; color: #fff; box-shadow: 0 0 12px rgba(217,119,6,.4); }
+    .diff-btn.hard.active   { background: #dc2626; color: #fff; box-shadow: 0 0 12px rgba(220,38,38,.4); }
+
     /* ── RULES ── */
     .rules {
       width: min(420px, 100%);
@@ -366,6 +393,16 @@
   <div class="mode-toggle">
     <button class="mode-btn active" id="btn-ai"    onclick="setMode('ai')">🤖 vs. KI</button>
     <button class="mode-btn"        id="btn-human" onclick="setMode('human')">👥 2 Spieler</button>
+  </div>
+
+  <!-- Difficulty (only visible in AI mode) -->
+  <div class="diff-wrap visible" id="diff-wrap">
+    <div class="diff-label">KI-Schwierigkeit</div>
+    <div class="diff-toggle">
+      <button class="diff-btn easy   active" id="d-easy"   onclick="setDiff('easy')">🟢 Einfach</button>
+      <button class="diff-btn medium"        id="d-medium" onclick="setDiff('medium')">🟡 Mittel</button>
+      <button class="diff-btn hard"          id="d-hard"   onclick="setDiff('hard')">🔴 Schwer</button>
+    </div>
   </div>
 
   <!-- Score -->
@@ -429,7 +466,9 @@
       <li>Zwei Spieler setzen abwechselnd ihre Symbole — <strong style="color:var(--x)">✕</strong> und <strong style="color:var(--o)">○</strong>.</li>
       <li>Wer zuerst <strong>drei in einer Reihe</strong> hat (horizontal, vertikal oder diagonal), gewinnt.</li>
       <li>Sind alle Felder belegt ohne Sieger → <strong>Unentschieden</strong>.</li>
-      <li>Im KI-Modus nutzt der Computer <strong>Minimax</strong> — er spielt fehlerfrei!</li>
+      <li><strong style="color:#4ade80">🟢 Einfach</strong> — KI spielt meist zufällig, ideal zum Einsteigen.</li>
+      <li><strong style="color:#fbbf24">🟡 Mittel</strong> — KI blockt und greift an, macht aber Fehler.</li>
+      <li><strong style="color:#f87171">🔴 Schwer</strong> — Reiner Minimax, absolut unbesiegbar.</li>
     </ul>
   </div>
 
@@ -442,6 +481,7 @@ let state  = Array(9).fill(null);
 let cur    = 'X';
 let over   = false;
 let mode   = 'ai';
+let diff   = 'easy';   // 'easy' | 'medium' | 'hard'
 let score  = {X:0,O:0,D:0};
 
 function setMode(m) {
@@ -450,7 +490,16 @@ function setMode(m) {
   document.getElementById('btn-human').classList.toggle('active', m==='human');
   document.getElementById('lbl-o').textContent = m==='ai' ? 'KI' : 'Spieler 2';
   document.getElementById('lbl-x').textContent = m==='ai' ? 'Du' : 'Spieler 1';
+  document.getElementById('diff-wrap').classList.toggle('visible', m==='ai');
   resetAll();
+}
+
+function setDiff(d) {
+  diff = d;
+  ['easy','medium','hard'].forEach(x => {
+    document.getElementById('d-'+x).classList.toggle('active', x===d);
+  });
+  newRound();
 }
 
 function tap(i) {
@@ -462,11 +511,42 @@ function tap(i) {
 
 function aiTurn() {
   document.getElementById('think').classList.add('active');
+  const delay = diff==='easy' ? 300 : diff==='medium' ? 420 : 600;
   setTimeout(() => {
     document.getElementById('think').classList.remove('active');
-    const m = best(state);
+    const m = aiMove(state);
     if (m !== -1) place(m, 'O');
-  }, 420);
+  }, delay);
+}
+
+function aiMove(b) {
+  const empty = b.map((v,i)=>v?-1:i).filter(i=>i>=0);
+  if (diff === 'easy') {
+    // 80% random, 20% optimal — makes mistakes often
+    if (Math.random() < 0.80) return empty[Math.floor(Math.random()*empty.length)];
+    return best(b);
+  }
+  if (diff === 'medium') {
+    // Always block immediate wins, sometimes plays optimal, sometimes random
+    const block = findWinMove(b, 'X');
+    const win   = findWinMove(b, 'O');
+    if (win  !== -1) return win;   // always take the win
+    if (block !== -1 && Math.random() < 0.70) return block; // 70% chance to block
+    if (Math.random() < 0.50) return best(b); // 50% chance optimal otherwise
+    return empty[Math.floor(Math.random()*empty.length)];
+  }
+  // hard — pure minimax, unbeatable
+  return best(b);
+}
+
+// find a move that immediately wins for player p, or -1
+function findWinMove(b, p) {
+  for (const [a,c,d] of WINS) {
+    const line = [b[a], b[c], b[d]];
+    const empties = [a,c,d].filter(i => !b[i]);
+    if (line.filter(v=>v===p).length===2 && empties.length===1) return empties[0];
+  }
+  return -1;
 }
 
 function place(i, p) {
@@ -511,7 +591,8 @@ function endGame(w) {
     const ai  = mode==='ai' && w==='O';
     document.getElementById('ov-emoji').textContent  = ai ? '🤖' : you ? '🏆' : w==='X' ? '🎉' : '🎊';
     document.getElementById('ov-title').textContent  = ai ? 'KI gewinnt!' : you ? 'Du gewinnst!' : `Spieler ${w==='X'?'1':'2'} gewinnt!`;
-    document.getElementById('ov-sub').textContent    = ai ? 'Minimax schlägt zurück.' : 'Glückwunsch!';
+    const aiSubs = {easy:'Sogar auf Einfach verloren 😅', medium:'Versuch es auf Schwer!', hard:'Minimax ist unbesiegbar.'};
+    document.getElementById('ov-sub').textContent    = ai ? aiSubs[diff] : 'Glückwunsch!';
   } else {
     score.D++;
     updateScore();
